@@ -10,6 +10,9 @@
 - Can pick color with GUI
 - Implemented Perlin Noise 3D color effect
 
+  ![image](https://github.com/user-attachments/assets/b90d2310-fcb7-4ac8-88d4-39fb71bc25aa)
+
+
 ## Objective
 - Check that the tools and build configuration we will be using for the class works.
 - Start learning Typescript and WebGL2
