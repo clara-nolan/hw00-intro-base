@@ -83,13 +83,16 @@ void main()
                                                             //lit by our point light are not completely black.
         
         
-        vec3 addedColor = vec3(0.0, 0.08, 0.1);
+        vec3 addedColor = vec3(111.0 / 255.0, 200.08 / 255.0, 12.8 / 255.0);
         
-        // Calculate Perlin noise based on the background color and apply it to the final output
         float noise = perlinNoise3D(addedColor) * u_Time * 0.02;
 
-        // Compute the final shaded color by combining the base color, light intensity, and Perlin noise
-        out_Col = vec4(diffuseColor.rgb * lightIntensity + noise + fract(mod(333.3, 123132.2)), diffuseColor.a);
+        vec3 color1 = vec3(u_Color.rgb); 
+        vec3 color2 = vec3(0.9, 0.3, 0.2); 
+
+        vec3 lerpedColor = mix(color1, color2, abs(sin(u_Time * 0.01 + noise)));
+
+        out_Col = vec4(mix(diffuseColor.rgb, lerpedColor + addedColor + fract(mod(333.3, 123132.2)), lightIntensity), diffuseColor.a);
 
         
 }
