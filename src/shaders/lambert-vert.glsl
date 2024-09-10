@@ -7,6 +7,8 @@
 //This simultaneous transformation allows your program to run much faster, especially when rendering
 //geometry with millions of vertices.
 
+uniform float u_Time; 
+
 uniform mat4 u_Model;       // The matrix that defines the transformation of the
                             // object we're rendering. In this assignment,
                             // this will be the result of traversing your scene graph.
@@ -45,7 +47,8 @@ void main()
 
 
     vec4 modelposition = u_Model * vs_Pos;   // Temporarily store the transformed vertex positions for use below
-
+    modelposition.xy *= cos(u_Time * 0.02) + smoothstep (0.0, 3.3, 100.2); 
+    modelposition.z += sin(u_Time * 0.03);
     fs_LightVec = lightPos - modelposition;  // Compute the direction in which the light source lies
 
     gl_Position = u_ViewProj * modelposition;// gl_Position is a built-in variable of OpenGL which is
