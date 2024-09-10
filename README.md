@@ -5,6 +5,11 @@
 </p>
 <p align="center">(source: Ken Perlin)</p>
 
+## Clara's Updates
+- Added changes to vertex shader to deform cube based off of sin and tangent values
+- Can pick color with GUI
+- Implemented Perlin Noise 3D color effect
+
 ## Objective
 - Check that the tools and build configuration we will be using for the class works.
 - Start learning Typescript and WebGL2
