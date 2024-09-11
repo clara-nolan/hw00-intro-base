@@ -8,9 +8,11 @@
 ## Clara's Updates
 - Added changes to vertex shader to deform cube based off of sin and tangent values
 - Can pick color with GUI
-- Implemented Perlin Noise 3D color effect
+- Implemented Perlin Noise 3D color effect that lerps to Worley Noise 3D cell effect
 
-  ![image](https://github.com/user-attachments/assets/b90d2310-fcb7-4ac8-88d4-39fb71bc25aa)
+ ![image](https://github.com/user-attachments/assets/ea6abdf9-0668-46dc-be91-6b1125368afb)
+![image](https://github.com/user-attachments/assets/6fd36835-1da2-4ad0-9779-a32016317bd6)
+
 
 
 ## Objective
