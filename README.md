@@ -6,7 +6,7 @@
 <p align="center">(source: Ken Perlin)</p>
 
 ## Clara's Updates
-- Added changes to vertex shader to deform cube based off of sin and tangent values
+- Added changes to vertex shader to deform cube based off of sine and cosine values
 - Can pick color with GUI
 - Implemented Perlin Noise 3D color effect that lerps to Worley Noise 3D cell effect
 
